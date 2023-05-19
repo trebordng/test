@@ -14,17 +14,12 @@ export default function Home({ images }: { images: any }) {
     >
       <Image
         alt="Next.js Conf photo"
-        className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
-        style={{ transform: "translate3d(0, 0, 0)" }}
         placeholder="blur"
         blurDataURL={images.blurDataURL}
         src={images.src}
-        width={720}
-        height={480}
-        sizes="(max-width: 640px) 100vw,
-                  (max-width: 1280px) 50vw,
-                  (max-width: 1536px) 33vw,
-                  25vw"
+        width={500}
+        height={500}
+       
       />
     </main>
   );
